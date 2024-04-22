@@ -1,0 +1,60 @@
+/* @import url("https://db.onlinewebfonts.com/c/c90d5b32b92cf6371f2ded27c8a955ef?family=Faritta"); */
+@font-face {
+  font-family: "Tallitha";
+  src: url("../fonts/Thallita/Tallitha.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bauer";
+  src: url("../fonts/Bauer/Bauer.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+@media (min-width: 1200px) {
+  .nav-title {
+    font-family: "Tallitha";
+    font-size: small;
+    margin-top: 14px;
+    color: rgba(250, 241, 162, 0.856);
+  }
+  .row{
+        --bs-gutter-x: 0 !important; 
+  }
+  .contenedor h1 {
+    text-align: center;
+    font-family: "Tallitha";
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-weight: bolder;
+    color: rgba(250, 241, 162, 0.856);
+  }
+  .general{
+    text-align: center;
+    margin-bottom: 150px;
+    
+  }
+  .general img{
+    width: 300px;
+  }
+  .contenedor-img h2{
+    text-align: center;
+    font-family: "Tallitha";
+    margin-bottom: 25px;
+    color: rgba(250, 241, 162, 0.856);
+  }
+  .pastas{
+    text-align: center;
+    
+  }
+  .img-pasta img{
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+  }
+}
