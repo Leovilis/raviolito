@@ -11,6 +11,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 body {
   background-color: black;
@@ -23,8 +25,8 @@ body {
     margin-top: 14px;
     color: rgba(250, 241, 162, 0.856);
   }
-  .row{
-        --bs-gutter-x: 0 !important; 
+  .row {
+    --bs-gutter-x: -30px !important;
   }
   .contenedor h1 {
     text-align: center;
@@ -34,27 +36,41 @@ body {
     font-weight: bolder;
     color: rgba(250, 241, 162, 0.856);
   }
-  .general{
+  .general {
     text-align: center;
     margin-bottom: 150px;
-    
   }
-  .general img{
+  .general img {
     width: 300px;
   }
-  .contenedor-img h2{
+  .contenedor-img h2 {
     text-align: center;
     font-family: "Tallitha";
     margin-bottom: 25px;
     color: rgba(250, 241, 162, 0.856);
   }
-  .pastas{
+  .pastas {
     text-align: center;
-    
+    margin-bottom: 40px;
   }
-  .img-pasta img{
+  .img-pasta img {
     max-width: 400px;
     height: auto;
     overflow: hidden;
+  }
+  .foot {
+    height: 200px;
+  }
+  .foot div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .foot div a {
+    margin-top: 30px;
+  }
+  .foot div a i {
+    font-size: 50px;
+    color: rgba(250, 241, 162, 0.856);
   }
 }
