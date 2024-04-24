@@ -41,7 +41,7 @@ body {
     margin-bottom: 150px;
   }
   .general img {
-    width: 300px;
+    width: 400px;
   }
   .contenedor-img h2 {
     text-align: center;
@@ -58,13 +58,50 @@ body {
     height: auto;
     overflow: hidden;
   }
+
+  .img-pasta,
+  .info-pasta {
+    position: relative;
+    transition: filter 0.3s;
+  }
+  .info-texto {
+    position: absolute;
+    width: 370px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .pasta-texto {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .pasta-texto-parrafo {
+    font-family: "Bauer";
+    font-size: larger;
+  }
+
   .foot {
-    height: 200px;
+    height: 270px;
   }
   .foot div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
   }
   .foot div a {
     margin-top: 30px;
@@ -72,5 +109,78 @@ body {
   .foot div a i {
     font-size: 50px;
     color: rgba(250, 241, 162, 0.856);
+  }
+  .foot h2 {
+    font-family: "Tallitha";
+    color: rgba(250, 241, 162, 0.856);
+    margin-top: 50px;
+  }
+  .foot-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .detalle {
+    margin-top: 30px;
+  }
+  .foot h3 {
+    font-family: "Bauer";
+    color: rgba(250, 241, 162, 0.856);
+    font-size: 16px;
+  }
+  .foot h4 {
+    font-family: "Bauer";
+    color: rgba(250, 241, 162, 0.856);
+    font-size: 10px;
+  }
+  .foot span {
+    font-weight: bolder;
+  }
+
+  /*-------EFECTOS HOVER-------*/
+  .info-pasta:hover {
+    filter: blur(5px);
+  }
+  .info-pasta:hover + .info-texto {
+    opacity: 1;
+  }
+  .ravioles:hover {
+    filter: blur(5px);
+  }
+  .ravioles:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .sorrentinos:hover {
+    filter: blur(5px);
+  }
+  .sorrentinos:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .capeletis:hover {
+    filter: blur(5px);
+  }
+  .capeletis:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .canelones:hover {
+    filter: blur(5px);
+  }
+  .canelones:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .tallarines:hover {
+    filter: blur(5px);
+  }
+  .tallarines:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .noquis:hover {
+    filter: blur(5px);
+  }
+  .noquis:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .foot div i:hover {
+    scale: 1.2;
   }
 }
