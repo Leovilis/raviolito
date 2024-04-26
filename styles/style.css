@@ -17,24 +17,54 @@
 body {
   background-color: black;
 }
+.nav-title {
+  font-family: "Tallitha";
+  font-size: small;
+  margin-top: 14px;
+  color: rgba(250, 241, 162, 0.856);
+}
+
+.contenedor h1 {
+  font-weight: bolder;
+  color: rgba(250, 241, 162, 0.856);
+  text-align: center;
+  font-family: "Tallitha";
+}
+.contenedor-img h2 {
+  text-align: center;
+  font-family: "Tallitha";
+  color: rgba(250, 241, 162, 0.856);
+}
+.foot div {
+  text-align: center;
+}
+.foot div a i {
+  font-size: 50px;
+  color: rgba(250, 241, 162, 0.856);
+}
+.foot h2 {
+  font-family: "Tallitha";
+  color: rgba(250, 241, 162, 0.856);
+  text-shadow: 6px 6px 2px rgba(0,0,0,0.6);
+}
+.foot h3,
+h4 {
+  font-family: "Bauer";
+  color: rgba(250, 241, 162, 0.856);
+}
+.foot-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 @media (min-width: 1200px) {
-  .nav-title {
-    font-family: "Tallitha";
-    font-size: small;
-    margin-top: 14px;
-    color: rgba(250, 241, 162, 0.856);
-  }
   .row {
     --bs-gutter-x: -30px !important;
   }
   .contenedor h1 {
-    text-align: center;
-    font-family: "Tallitha";
     margin-top: 70px;
     margin-bottom: 70px;
-    font-weight: bolder;
-    color: rgba(250, 241, 162, 0.856);
   }
   .general {
     text-align: center;
@@ -44,10 +74,7 @@ body {
     width: 400px;
   }
   .contenedor-img h2 {
-    text-align: center;
-    font-family: "Tallitha";
     margin-bottom: 25px;
-    color: rgba(250, 241, 162, 0.856);
   }
   .pastas {
     text-align: center;
@@ -98,40 +125,25 @@ body {
   }
 
   .foot {
-    height: 270px;
+    height: 225px;
   }
-  .foot div {
-    text-align: center;
-  }
+
   .foot div a {
     margin-top: 30px;
   }
-  .foot div a i {
-    font-size: 50px;
-    color: rgba(250, 241, 162, 0.856);
-  }
+
   .foot h2 {
-    font-family: "Tallitha";
-    color: rgba(250, 241, 162, 0.856);
     margin-top: 50px;
   }
-  .foot-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  
   .detalle {
     margin-top: 30px;
   }
   .foot h3 {
-    font-family: "Bauer";
-    color: rgba(250, 241, 162, 0.856);
     font-size: 16px;
   }
   .foot h4 {
-    font-family: "Bauer";
-    color: rgba(250, 241, 162, 0.856);
-    font-size: 10px;
+    font-size: 13px;
   }
   .foot span {
     font-weight: bolder;
@@ -182,5 +194,63 @@ body {
   }
   .foot div i:hover {
     scale: 1.2;
+  }
+}
+@media (max-width: 700px) {
+  .contenedor h1 {
+    font-size: medium;
+    margin: 40px 0 30px 0;
+  }
+  .general {
+    text-align: center;
+  }
+  .general img {
+    width: 300px;
+  }
+  .general div p {
+    display: none;
+  }
+  .contenedor-img h2 {
+    margin: 40px 3% 20px 30px;
+    font-size: x- large;
+    line-height: 45px;
+  }
+  .pastas {
+    display: block !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .img-pasta img {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  .img-pasta p {
+    display: none;
+  }
+  .row {
+    margin-left: 8%;
+  }
+  .foot {
+    height: 230px;
+    position: absolute;
+  }
+  .foot h2{
+    margin-bottom: 30px;
+  }
+
+  .foot h3{
+    font-size: 15px;
+
+  }
+  .foot h4{
+    font-size: 14px;
+  }
+  .foot-icons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .foot div a i{
+    font-size: 40px;
   }
 }
