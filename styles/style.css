@@ -57,7 +57,35 @@ h4 {
   justify-content: space-around;
   align-items: center;
 }
+/*--------------PAGINA PRECIOS-------------*/
+.precios-lista-items{
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.precios img{
+  width: 300px;
+}
 
+.precios div div h2{
+  font-family: "Tallitha";
+  color: rgba(250, 241, 162, 0.856);
+  line-height: 80px;
+  font-size: xx-larger;
+  text-decoration: underline;
+  transform: rotate(-6deg);
+  margin-bottom: 50px;
+}
+.precios div div h3, p{
+  font-family: "Bauer";
+  color: rgba(250, 241, 162, 0.856);
+}
+.precios-lista-items-detalle{
+  width: 67%;
+  margin-left: 50px;
+}
+/*-----------------------------------------*/
 @media (min-width: 1200px) {
   .row {
     --bs-gutter-x: -30px !important;
@@ -252,5 +280,31 @@ h4 {
   }
   .foot div a i{
     font-size: 40px;
+  }
+  /*---------LISTA DE PRECIOS-----------*/
+  .precios-lista-items{
+    margin-left: 15px;
+    border-bottom: 4px solid;
+    /* margin-bottom: 80px; */
+  }
+  .precios img{
+  width: 145px;
+  }
+  .precios-lista-items-detalle{
+    width: 50%;
+    margin-left: 20px;
+  }
+  .precios div div h2{
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .precios div div h3{
+    font-size: 20px;
+  }
+  .precios-lista-precio{
+    margin-bottom: 30px;
+  }
+  .noquis{
+    margin-bottom: 80px;
   }
 }
