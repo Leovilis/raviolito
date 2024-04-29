@@ -77,7 +77,7 @@ h4 {
   transform: rotate(-6deg);
   margin-bottom: 50px;
 }
-.precios div div h3, p{
+.precios div div, .precios-lista-variedades{
   font-family: "Bauer";
   color: rgba(250, 241, 162, 0.856);
 }
@@ -224,7 +224,7 @@ h4 {
     scale: 1.2;
   }
 }
-@media (max-width: 700px) {
+@media (min-width: 300px) {
   .contenedor h1 {
     font-size: medium;
     margin: 40px 0 30px 0;
@@ -248,6 +248,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: 5% !important;
   }
   .img-pasta img {
     max-width: 300px;
@@ -295,7 +296,7 @@ h4 {
     margin-left: 20px;
   }
   .precios div div h2{
-    font-size: 23px;
+    font-size: 19px;
     margin-bottom: 5px;
   }
   .precios div div h3{
@@ -304,7 +305,7 @@ h4 {
   .precios-lista-precio{
     margin-bottom: 30px;
   }
-  .noquis{
+  .noquis-precios{
     margin-bottom: 80px;
   }
 }
