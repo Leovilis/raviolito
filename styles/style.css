@@ -86,7 +86,7 @@ h4 {
   margin-left: 50px;
 }
 /*-----------------------------------------*/
-@media (min-width: 700px) and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .row {
     --bs-gutter-x: -30px !important;
   }
@@ -105,8 +105,12 @@ h4 {
     margin-bottom: 25px;
   }
   .pastas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-bottom: 40px;
+    column-gap: 30px;
   }
   .img-pasta img {
     max-width: 400px;
@@ -224,7 +228,9 @@ h4 {
     scale: 1.2;
   }
 }
-@media (min-width: 300px ) and (max-width: 700) {
+
+
+@media only screen and (max-width: 525px){
   .contenedor h1 {
     font-size: medium;
     margin: 40px 0 30px 0;
@@ -244,25 +250,31 @@ h4 {
     line-height: 45px;
   }
   .pastas {
-    display: block !important;
+    /* display: block !important; */
+    /* width: 1em;*/
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-left: 5% !important;
+    text-align: center; 
+    row-gap: 30px;
+    
+    /* margin-left: 1.1em !important; */
   }
   .img-pasta img {
-    max-width: 300px;
-    margin-bottom: 30px;
+    width: 300px;
+    /* margin-bottom: 30px; */
   }
   .img-pasta p {
     display: none;
   }
-  .row {
-    margin-left: 8%;
-  }
+ .capeletis{
+  margin-bottom: 30px;
+ }
   .foot {
     height: 230px;
     position: absolute;
+    margin-top: 70px;
   }
   .foot h2{
     margin-bottom: 30px;
