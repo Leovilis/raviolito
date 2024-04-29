@@ -86,7 +86,7 @@ h4 {
   margin-left: 50px;
 }
 /*-----------------------------------------*/
-@media (min-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .row {
     --bs-gutter-x: -30px !important;
   }
@@ -224,7 +224,7 @@ h4 {
     scale: 1.2;
   }
 }
-@media (min-width: 300px) {
+@media (min-width: 300px ) and (max-width: 700) {
   .contenedor h1 {
     font-size: medium;
     margin: 40px 0 30px 0;
