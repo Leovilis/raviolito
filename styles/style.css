@@ -30,10 +30,22 @@ body {
   text-align: center;
   font-family: "Tallitha";
 }
-.contenedor-img h2 {
+.contenedor-img h2,
+.precios-subtitulo {
   text-align: center;
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
+}
+.medios-pago {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconos,
+.iconos img {
+  width: 48px !important;
+  height: 48px;
 }
 .foot div {
   text-align: center;
@@ -45,7 +57,7 @@ body {
 .foot h2 {
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
-  text-shadow: 6px 6px 2px rgba(0,0,0,0.6);
+  text-shadow: 6px 6px 2px rgba(0, 0, 0, 0.6);
 }
 .foot h3,
 h4 {
@@ -58,17 +70,17 @@ h4 {
   align-items: center;
 }
 /*--------------PAGINA PRECIOS-------------*/
-.precios-lista-items{
+.precios-lista-items {
   display: flex;
   align-items: center;
   margin-left: 120px;
   margin-top: 50px;
 }
-.precios img{
+.precios img {
   width: 300px;
 }
 
-.precios div div h2{
+.precios div div h2 {
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
   line-height: 80px;
@@ -77,11 +89,12 @@ h4 {
   transform: rotate(-6deg);
   margin-bottom: 50px;
 }
-.precios div div, .precios-lista-variedades{
+.precios div div,
+.precios-lista-variedades {
   font-family: "Bauer";
   color: rgba(250, 241, 162, 0.856);
 }
-.precios-lista-items-detalle{
+.precios-lista-items-detalle {
   width: 67%;
   margin-left: 50px;
 }
@@ -101,7 +114,8 @@ h4 {
   .general img {
     width: 400px;
   }
-  .contenedor-img h2 {
+  .contenedor-img h2,
+  .precios-subtitulo {
     margin-bottom: 25px;
   }
   .pastas {
@@ -167,7 +181,7 @@ h4 {
   .foot h2 {
     margin-top: 50px;
   }
-  
+
   .detalle {
     margin-top: 30px;
   }
@@ -229,8 +243,7 @@ h4 {
   }
 }
 
-
-@media only screen and (max-width: 525px){
+@media only screen and (max-width: 525px) {
   .contenedor h1 {
     font-size: medium;
     margin: 40px 0 30px 0;
@@ -244,7 +257,8 @@ h4 {
   .general div p {
     display: none;
   }
-  .contenedor-img h2 {
+  .contenedor-img h2,
+  .precios-subtitulo {
     margin: 40px 3% 20px 30px;
     font-size: x- large;
     line-height: 45px;
@@ -256,10 +270,8 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     row-gap: 30px;
-    
-    /* margin-left: 1.1em !important; */
   }
   .img-pasta img {
     width: 300px;
@@ -268,56 +280,65 @@ h4 {
   .img-pasta p {
     display: none;
   }
- .capeletis{
-  margin-bottom: 30px;
- }
+  .capeletis {
+    margin-bottom: 30px;
+  }
+  .medios-pago{
+    margin-bottom: 30px;
+    width: 185px;
+    justify-content: flex-end;
+  }
+  .iconos,
+  .iconos img {
+    width: 45px !important;
+    height: 45px;
+  }
   .foot {
     height: 230px;
     position: absolute;
     margin-top: 70px;
   }
-  .foot h2{
+  .foot h2 {
     margin-bottom: 30px;
   }
 
-  .foot h3{
+  .foot h3 {
     font-size: 15px;
-
   }
-  .foot h4{
+  .foot h4 {
     font-size: 14px;
   }
-  .foot-icons{
+  .foot-icons {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .foot div a i{
+  .foot div a i {
     font-size: 40px;
   }
   /*---------LISTA DE PRECIOS-----------*/
-  .precios-lista-items{
+  .precios-lista-items {
     margin-left: 15px;
     border-bottom: 4px solid;
     /* margin-bottom: 80px; */
   }
-  .precios img{
-  width: 145px;
+  .precios img {
+    width: 145px;
   }
-  .precios-lista-items-detalle{
+  .precios-lista-items-detalle {
     width: 50%;
     margin-left: 20px;
   }
-  .precios div div h2{
+  .precios div div h2 {
     font-size: 19px;
     margin-bottom: 5px;
   }
-  .precios div div h3{
+  .precios div div h3 {
     font-size: 20px;
   }
-  .precios-lista-precio{
+  .precios-lista-precio {
     margin-bottom: 30px;
   }
-  .noquis-precios{
+  .noquis-precios {
     margin-bottom: 80px;
   }
 }
