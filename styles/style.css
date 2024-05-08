@@ -37,16 +37,20 @@ body {
   color: rgba(250, 241, 162, 0.856);
 }
 .medios-pago {
-  width: 170px;
+  width: 175px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .iconos,
 .iconos img {
-  width: 48px !important;
-  height: 48px;
+  width: 35px !important;
+  height: 35px;
 }
+.mercado img{
+  width: 43px !important;
+}
+
 .foot div {
   text-align: center;
 }
