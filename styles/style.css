@@ -353,7 +353,7 @@ h4 {
   .precios-lista-precio {
     margin-bottom: 30px;
   }
-  .noquis-precios {
+  .noquis-precios, .noquis {
     margin-bottom: 80px;
   }
 }
