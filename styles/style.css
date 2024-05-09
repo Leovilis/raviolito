@@ -79,6 +79,9 @@ h4 {
   margin-right: 10px;
   text-align: right;
 }
+.foot-firma img{
+  filter: drop-shadow(0px 1px 8px rgb(255, 0, 0));
+}
 /*--------------PAGINA PRECIOS-------------*/
 .precios-lista-items {
   display: flex;
@@ -329,7 +332,9 @@ h4 {
   .foot-firma{
     text-align: center;
     margin-top: -10px;
+    
   }
+ 
   /*---------LISTA DE PRECIOS-----------*/
   .precios-lista-items {
     margin-left: 15px;
