@@ -305,9 +305,9 @@ h4 {
     height: 45px;
   }
   .foot {
-    height: 230px;
+    height: 272px;
     position: absolute;
-    margin-top: 70px;
+    /* margin-top: 70px; */
   }
   .foot h2 {
     margin-bottom: 30px;
@@ -325,6 +325,10 @@ h4 {
   }
   .foot div a i {
     font-size: 40px;
+  }
+  .foot-firma{
+    text-align: center;
+    margin-top: -10px;
   }
   /*---------LISTA DE PRECIOS-----------*/
   .precios-lista-items {
