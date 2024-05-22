@@ -30,6 +30,9 @@ body {
   text-align: center;
   font-family: "Tallitha";
 }
+.precios-subtitulo{
+  margin-bottom: 70px !important;
+}
 .contenedor-img h2,
 .precios-subtitulo {
   text-align: center;
@@ -87,12 +90,15 @@ h4 {
   display: flex;
   align-items: center;
   margin-left: 120px;
-  margin-top: 50px;
+  border-bottom: 4px solid;
+  /* margin-top: 50px; */
 }
 .precios img {
   width: 300px;
 }
-
+.medios-pago{
+  margin-bottom: 30px;
+}
 .precios div div h2 {
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
@@ -293,14 +299,16 @@ h4 {
   .img-pasta p {
     display: none;
   }
+ 
   .capeletis {
     margin-bottom: 30px;
   }
   .medios-pago{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px;
     width: 185px;
     justify-content: flex-end;
-    overflow: hidden;
+    overflow: hidden; */
+    display: none;
   }
   .iconos,
   .iconos img {
