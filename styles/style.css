@@ -30,6 +30,9 @@ body {
   text-align: center;
   font-family: "Tallitha";
 }
+.precios-subtitulo {
+  margin-bottom: 70px !important;
+}
 .contenedor-img h2,
 .precios-subtitulo {
   text-align: center;
@@ -47,7 +50,7 @@ body {
   width: 35px !important;
   height: 35px;
 }
-.mercado img{
+.mercado img {
   width: 43px !important;
 }
 
@@ -74,12 +77,12 @@ h4 {
   align-items: center;
   font-family: "Tallitha" !important;
 }
-.foot-firma{
+.foot-firma {
   margin-top: 30px;
   margin-right: 10px;
   text-align: right;
 }
-.foot-firma img{
+.foot-firma img {
   filter: drop-shadow(0px 1px 8px rgb(255, 0, 0));
 }
 /*--------------PAGINA PRECIOS-------------*/
@@ -87,12 +90,15 @@ h4 {
   display: flex;
   align-items: center;
   margin-left: 120px;
-  margin-top: 50px;
+  border-bottom: 4px solid;
+  /* margin-top: 50px; */
 }
 .precios img {
   width: 300px;
 }
-
+.medios-pago {
+  margin-bottom: 30px;
+}
 .precios div div h2 {
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
@@ -144,14 +150,13 @@ h4 {
     height: auto;
     overflow: hidden;
   }
-.info-texto{
-  display: none;
-}
+  .info-texto {
+    display: none;
+  }
   .img-pasta,
   .info-pasta {
     position: relative;
     transition: filter 0.3s;
-  
   }
   .info-texto {
     position: absolute;
@@ -210,9 +215,9 @@ h4 {
   .foot span {
     font-weight: bolder;
   }
-.info-texto{
-  display: none;
-}
+  .info-texto {
+    display: none;
+  }
   /*-------EFECTOS HOVER-------*/
   /* .info-pasta:hover {
     filter: blur(5px);
@@ -298,14 +303,16 @@ h4 {
   .img-pasta p {
     display: none;
   }
+
   .capeletis {
     margin-bottom: 30px;
   }
-  .medios-pago{
+  .medios-pago {
     margin-bottom: 30px;
     width: 130px;
     justify-content: flex-end;
     overflow: hidden;
+    display: none;
   }
   .iconos,
   .iconos img {
@@ -334,12 +341,11 @@ h4 {
   .foot div a i {
     font-size: 40px;
   }
-  .foot-firma{
+  .foot-firma {
     text-align: center;
     margin-top: -10px;
-    
   }
- 
+
   /*---------LISTA DE PRECIOS-----------*/
   .precios-lista-items {
     margin-left: 15px;
@@ -363,7 +369,8 @@ h4 {
   .precios-lista-precio {
     margin-bottom: 30px;
   }
-  .noquis-precios, .noquis {
+  .noquis-precios,
+  .noquis {
     margin-bottom: 80px;
   }
 }
