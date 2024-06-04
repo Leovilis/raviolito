@@ -144,11 +144,14 @@ h4 {
     height: auto;
     overflow: hidden;
   }
-
+.info-texto{
+  display: none;
+}
   .img-pasta,
   .info-pasta {
     position: relative;
     transition: filter 0.3s;
+  
   }
   .info-texto {
     position: absolute;
@@ -207,9 +210,11 @@ h4 {
   .foot span {
     font-weight: bolder;
   }
-
+.info-texto{
+  display: none;
+}
   /*-------EFECTOS HOVER-------*/
-  .info-pasta:hover {
+  /* .info-pasta:hover {
     filter: blur(5px);
   }
   .info-pasta:hover + .info-texto {
@@ -253,7 +258,7 @@ h4 {
   }
   .foot div i:hover {
     scale: 1.2;
-  }
+  } */
 }
 
 @media only screen and (max-width: 525px) {
@@ -298,7 +303,7 @@ h4 {
   }
   .medios-pago{
     margin-bottom: 30px;
-    width: 185px;
+    width: 130px;
     justify-content: flex-end;
     overflow: hidden;
   }
