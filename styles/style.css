@@ -3,10 +3,12 @@
   font-family: "Tallitha";
   src: url("../fonts/Thallita/Tallitha.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Bauer";
   src: url("../fonts/Bauer/Bauer.ttf") format("truetype");
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +16,11 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   background-color: black;
 }
+
 .nav-title {
   font-family: "Tallitha";
   font-size: small;
@@ -30,26 +34,31 @@ body {
   text-align: center;
   font-family: "Tallitha";
 }
+
 .precios-subtitulo {
   margin-bottom: 70px !important;
 }
+
 .contenedor-img h2,
 .precios-subtitulo {
   text-align: center;
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
 }
+
 .medios-pago {
   width: 175px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .iconos,
 .iconos img {
   width: 35px !important;
   height: 35px;
 }
+
 .mercado img {
   width: 43px !important;
 }
@@ -57,48 +66,57 @@ body {
 .foot div {
   text-align: center;
 }
+
 .foot div a i {
   font-size: 50px;
   color: rgba(250, 241, 162, 0.856);
 }
+
 .foot h2 {
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
   text-shadow: 6px 6px 2px rgba(0, 0, 0, 0.6);
 }
+
 .foot h3,
 h4 {
   font-family: "Bauer";
   color: rgba(250, 241, 162, 0.856);
 }
+
 .foot-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: "Tallitha" !important;
 }
+
 .foot-firma {
   margin-top: 30px;
   margin-right: 10px;
   text-align: right;
 }
+
 .foot-firma img {
   filter: drop-shadow(0px 1px 8px rgb(255, 0, 0));
 }
+
 /*--------------PAGINA PRECIOS-------------*/
 .precios-lista-items {
   display: flex;
   align-items: center;
   margin-left: 120px;
   border-bottom: 4px solid;
-  /* margin-top: 50px; */
 }
+
 .precios img {
   width: 300px;
 }
+
 .medios-pago {
   margin-bottom: 30px;
 }
+
 .precios div div h2 {
   font-family: "Tallitha";
   color: rgba(250, 241, 162, 0.856);
@@ -108,35 +126,43 @@ h4 {
   transform: rotate(-6deg);
   margin-bottom: 50px;
 }
+
 .precios div div,
 .precios-lista-variedades {
   font-family: "Bauer";
   color: rgba(250, 241, 162, 0.856);
 }
+
 .precios-lista-items-detalle {
   width: 67%;
   margin-left: 50px;
 }
+
 /*-----------------------------------------*/
 @media only screen and (min-width: 1200px) {
   .row {
     --bs-gutter-x: -30px !important;
   }
+
   .contenedor h1 {
     margin-top: 70px;
     margin-bottom: 69.9px;
   }
+
   .general {
     text-align: center;
     margin-bottom: 150px;
   }
+
   .general img {
     width: 400px;
   }
+
   .contenedor-img h2,
   .precios-subtitulo {
     margin-bottom: 25px;
   }
+
   .pastas {
     display: flex;
     justify-content: center;
@@ -145,33 +171,44 @@ h4 {
     margin-bottom: 40px;
     column-gap: 30px;
   }
+
   .img-pasta img {
     max-width: 400px;
     height: auto;
     overflow: hidden;
   }
-  .info-texto {
-    display: none;
-  }
-  .img-pasta,
-  .info-pasta {
+
+  .img-pasta {
     position: relative;
     transition: filter 0.3s;
   }
+
   .info-texto {
-    position: absolute;
-    width: 370px;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
   }
+
+  .info-pasta {
+    width: 600px;
+    height: auto;
+    margin-top: 40px;
+    grid-area: 1 / 1 / 6 / 3;
+  }
+
+  .info-texto-parrafo {
+    font-family: "Tallitha";
+    color: rgba(250, 241, 162, 0.856);
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 57px;
+    margin-right: 60px;
+    grid-area: 1 / 3 / 6 / 6;
+  }
+
   .pasta-texto {
     position: absolute;
     width: 350px;
@@ -186,6 +223,7 @@ h4 {
     opacity: 0;
     transition: opacity 0.5s;
   }
+
   .pasta-texto-parrafo {
     font-family: "Bauer";
     font-size: larger;
@@ -206,64 +244,20 @@ h4 {
   .detalle {
     margin-top: 30px;
   }
+
   .foot h3 {
     font-size: 16px;
   }
+
   .foot h4 {
     font-size: 13px;
   }
+
   .foot span {
     font-weight: bolder;
   }
-  .info-texto {
-    display: none;
-  }
-  /*-------EFECTOS HOVER-------*/
-  /* .info-pasta:hover {
-    filter: blur(5px);
-  }
-  .info-pasta:hover + .info-texto {
-    opacity: 1;
-  }
-  .ravioles:hover {
-    filter: blur(5px);
-  }
-  .ravioles:hover + .pasta-texto {
-    opacity: 1;
-  }
-  .sorrentinos:hover {
-    filter: blur(5px);
-  }
-  .sorrentinos:hover + .pasta-texto {
-    opacity: 1;
-  }
-  .capeletis:hover {
-    filter: blur(5px);
-  }
-  .capeletis:hover + .pasta-texto {
-    opacity: 1;
-  }
-  .canelones:hover {
-    filter: blur(5px);
-  }
-  .canelones:hover + .pasta-texto {
-    opacity: 1;
-  }
-  .tallarines:hover {
-    filter: blur(5px);
-  }
-  .tallarines:hover + .pasta-texto {
-    opacity: 1;
-  }
-  .noquis:hover {
-    filter: blur(5px);
-  }
-  .noquis:hover + .pasta-texto {
-    opacity: 1;
-  }
-  .foot div i:hover {
-    scale: 1.2;
-  } */
+
+
 }
 
 @media only screen and (max-width: 525px) {
@@ -271,42 +265,39 @@ h4 {
     font-size: medium;
     margin: 40px 0 30px 0;
   }
+
   .general {
     text-align: center;
   }
+
   .general img {
     width: 300px;
   }
-  .general div p {
-    display: none;
-  }
-  .contenedor-img h2,
+
   .precios-subtitulo {
-    margin: 40px 3% 20px 30px;
-    font-size: x- large;
-    line-height: 45px;
-  }
-  .pastas {
-    /* display: block !important; */
-    /* width: 1em;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 30px 20px 0px 20px;
+    line-height: 55px;
     text-align: center;
-    row-gap: 30px;
   }
+
   .img-pasta img {
     width: 300px;
-    /* margin-bottom: 30px; */
   }
+
   .img-pasta p {
-    display: none;
+    font-family: "Bauer";
+    font-size: 20px;
+    color: rgba(250, 241, 162, 0.856);
+    text-align: justify;
+    margin: 20px 15px 0px 15px;
   }
 
   .capeletis {
     margin-bottom: 30px;
   }
+
   .medios-pago {
     margin-bottom: 30px;
     width: 130px;
@@ -314,16 +305,18 @@ h4 {
     overflow: hidden;
     display: none;
   }
+
   .iconos,
   .iconos img {
     width: 45px !important;
     height: 45px;
   }
+
   .foot {
     height: 272px;
     position: absolute;
-    /* margin-top: 70px; */
   }
+
   .foot h2 {
     margin-bottom: 30px;
   }
@@ -331,16 +324,20 @@ h4 {
   .foot h3 {
     font-size: 15px;
   }
+
   .foot h4 {
     font-size: 14px;
   }
+
   .foot-icons {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .foot div a i {
     font-size: 40px;
   }
+
   .foot-firma {
     text-align: center;
     margin-top: -10px;
@@ -350,27 +347,33 @@ h4 {
   .precios-lista-items {
     margin-left: 15px;
     border-bottom: 4px solid;
-    /* margin-bottom: 80px; */
   }
+
   .precios img {
     width: 145px;
   }
+
   .precios-lista-items-detalle {
     width: 50%;
     margin-left: 20px;
   }
+
   .precios div div h2 {
     font-size: 19px;
     margin-bottom: 5px;
   }
+
   .precios div div h3 {
     font-size: 20px;
   }
+
   .precios-lista-precio {
     margin-bottom: 30px;
   }
+
   .noquis-precios,
   .noquis {
     margin-bottom: 80px;
   }
+
 }
