@@ -107,6 +107,7 @@ h4 {
   align-items: center;
   margin-left: 120px;
   border-bottom: 4px solid;
+  /* margin-top: 50px; */
 }
 
 .precios img {
@@ -178,6 +179,9 @@ h4 {
     overflow: hidden;
   }
 
+  /* .info-texto {
+    display: none;
+  } */
   .img-pasta {
     position: relative;
     transition: filter 0.3s;
@@ -209,6 +213,20 @@ h4 {
     grid-area: 1 / 3 / 6 / 6;
   }
 
+  /* .info-texto {
+    position: absolute;
+    width: 370px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  } */
   .pasta-texto {
     position: absolute;
     width: 350px;
@@ -257,7 +275,55 @@ h4 {
     font-weight: bolder;
   }
 
-
+  /* .info-texto {
+    display: none;
+  } */
+  /*-------EFECTOS HOVER-------*/
+  /* .info-pasta:hover {
+    filter: blur(5px);
+  }
+  .info-pasta:hover + .info-texto {
+    opacity: 1;
+  }
+  .ravioles:hover {
+    filter: blur(5px);
+  }
+  .ravioles:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .sorrentinos:hover {
+    filter: blur(5px);
+  }
+  .sorrentinos:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .capeletis:hover {
+    filter: blur(5px);
+  }
+  .capeletis:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .canelones:hover {
+    filter: blur(5px);
+  }
+  .canelones:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .tallarines:hover {
+    filter: blur(5px);
+  }
+  .tallarines:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .noquis:hover {
+    filter: blur(5px);
+  }
+  .noquis:hover + .pasta-texto {
+    opacity: 1;
+  }
+  .foot div i:hover {
+    scale: 1.2;
+  } */
 }
 
 @media only screen and (max-width: 525px) {
@@ -282,8 +348,16 @@ h4 {
     text-align: center;
   }
 
+  /* .contenedor-img h2
+   {
+    margin: 40px 3% 20px 30px;
+    font-size: large;
+    line-height: 45px;
+  } */
+
   .img-pasta img {
-    width: 300px;
+    width: 380px;
+    margin: 30px 0px 30px 0px;
   }
 
   .img-pasta p {
@@ -315,6 +389,8 @@ h4 {
   .foot {
     height: 272px;
     position: absolute;
+    margin-top: 50px;
+    /* margin-top: 70px; */
   }
 
   .foot h2 {
@@ -347,6 +423,7 @@ h4 {
   .precios-lista-items {
     margin-left: 15px;
     border-bottom: 4px solid;
+    /* margin-bottom: 80px; */
   }
 
   .precios img {
